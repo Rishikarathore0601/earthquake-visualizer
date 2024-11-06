@@ -64,9 +64,10 @@ This app uses the **USGS Earthquake API**:
 - You can adjust the radius for historical earthquake searches by changing the `radiusKm` variable in `App.jsx`.
 - Modify the number of historical events shown in the sidebar by adjusting the `slice` parameter in the `fetchHistory` function.
 
-## Screenshots
+## Deployed link
 
-![Earthquake Visualizer Screenshot](screenshot.png)
+- https://earthquake-visualize.netlify.app/
+
 
 ## Future Improvements
 
