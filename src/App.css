@@ -1,0 +1,99 @@
+@import "leaflet/dist/leaflet.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: linear-gradient(90deg, #2b5876, #4e4376);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Main Content Area */
+.content {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 80px); /* Account for header height */
+}
+
+/* Map Container */
+.leaflet-container {
+  flex: 1;
+  height: 100%;
+}
+
+/* Sidebar for Recent History */
+.history-sidebar {
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 2px solid #ddd;
+  width: 300px;
+  overflow-y: auto;
+}
+
+.history-sidebar h2 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.history-sidebar p,
+.history-sidebar ul {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.history-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history-sidebar li {
+  padding: 0.8rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-sidebar li strong {
+  color: #2b5876;
+}
+
+/* Scrollbar Styling */
+.history-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.history-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.history-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
